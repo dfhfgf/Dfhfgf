@@ -135,7 +135,5 @@ h2{
     background-image: linear-gradient(to right, transparent, darkgrey, transparent);
 }
 #word{
-   text-align: center;
-   bottom: 0;
-   position: absolute;
+   
 }
