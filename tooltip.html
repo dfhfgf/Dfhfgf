@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Tooltip 容器 */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black; /* 悬停元素上显示点线 */
+        }
+         
+        /* Tooltip 文本 */
+        .tooltip .tooltiptext-right {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+         
+            /* 定位 */
+            position: absolute;
+            z-index: 1;
+        }
+         
+        /* 鼠标移动上去后显示提示框 */
+        .tooltip:hover .tooltiptext-right {
+            visibility: visible;
+        }
+
+        .tooltip .tooltiptext-left {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+         
+            /* 定位 */
+            position: absolute;
+            z-index: 1;
+        }
+         
+        /* 鼠标移动上去后显示提示框 */
+        .tooltip:hover .tooltiptext-left {
+            visibility: visible;
+        }
+        </style>
+       <div style="text-align: center;">  
+        <div class="tooltip">基础提示工具练习（右）
+          <span class="tooltiptext-right">提示文本</span>
+        </div></br>
+        <div class="tooltip">基础提示工具练习（左）
+            <span class="tooltiptext-left">提示文本</span>
+          </div></br>
+    
+    </div>
+</body>
+</html>
